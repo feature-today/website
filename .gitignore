@@ -1,0 +1,24 @@
+# Node
+node_modules/
+dist/
+server/
+tmp/
+coverage/
+*.tsbuildinfo
+.cache/
+
+# Qwik / build
+.qwik/
+.vercel/
+.netlify/
+
+# VS Code
+.history/
+.vscode/*.log
+
+# OS
+.DS_Store
+
+# Local env
+.env
+.env.local

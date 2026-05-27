@@ -1,0 +1,21 @@
+/**
+ * This file is part of feature-today.
+ * Copyright (C) 2026 feature-today contributors
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
+
+import {
+  renderToStream,
+  type RenderToStreamOptions,
+} from "@qwik.dev/core/server";
+import Root from "./root";
+
+export default function (opts: RenderToStreamOptions) {
+  return renderToStream(<Root />, {
+    ...opts,
+    containerAttributes: {
+      lang: "en",
+      ...opts.containerAttributes,
+    },
+  });
+}
